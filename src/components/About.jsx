@@ -1,0 +1,49 @@
+import React from "react";
+import pic from "../assets/me/me_professional.jpg";
+
+
+export default function About() {
+
+    
+
+    return (
+        <>
+            <div name="About" className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-20 mb-10">
+                <div className="flex flex-col md:flex-row items-center md:items-start">
+                    <div className="about-img flex-shrink-0">
+                        <img
+                            src={pic}
+                            alt="About Me"
+                            className="w-52 h-52 md:w-[400px] md:h-[400px] rounded-full animate-floatImage"
+                        />
+                    </div>
+                    <div className="about-content mt-6 md:ml-8 md:mt-0">
+                        <h2 className="text-3xl font-bold text-center md:text-left">About Me</h2>
+                        <p className="mt-4 mb-8 text-lg text-center md:text-left">
+                            I am a dedicated Full-Stack Developer with expertise in the MERN stack (MongoDB, Express, React, Node.js) and a strong background in JavaScript, Python, C, and MySQL. I excel in delivering high-quality, scalable software solutions and have a passion for creating responsive and user-friendly web applications.
+                        </p>
+                        <ul className="list-none space-y-4 text-lg text-center md:text-left">
+                            <li>
+                                <strong className="text-yellow-400">Education and Academic Journey:</strong> I completed my undergraduate studies at Burdwan MUC Women's College with a CGPA of 9.28. I have also recently completed my master’s degree from The University of Burdwan.
+                            </li>
+                            <li>
+                                <strong className="text-yellow-400">Passion and Interests:</strong> I enjoy designing web pages with innovative ideas and continuously seek to explore and expand my knowledge of web development.
+                            </li>
+                            <li>
+                                <strong className="text-yellow-400">Career Goals:</strong> I aim to advance as a software developer, gaining experience with the latest technologies and contributing to impactful projects.
+                            </li>
+                        </ul>
+                        <a
+                            href="../assets/cv/Soumi Samanta(Resume - 21.09.24).pdf "
+                            className="inline-block mt-8 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+                            download
+                        >
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </>
+    );
+}
