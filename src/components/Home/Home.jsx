@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import pic from "../../assets/me/me_professional.jpg";
+import pic from "../../../public/assets/me/me_professional.jpg";
 
 export default function Home() {
     return (

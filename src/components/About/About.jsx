@@ -1,7 +1,6 @@
 import React from "react";
-import pic from "../../assets/me/me_professional.jpg";
-import { Link } from "react-router-dom";
-import cv from '../../assets/cv/Soumi Samanta(Resume - 21.09.24).pdf';
+import pic from "../../../public/assets/me/me_professional.jpg";
+import cv from '../../../public/assets/cv/Soumi Samanta(Resume - 21.09.24).pdf';
 
 export default function About() {
 
