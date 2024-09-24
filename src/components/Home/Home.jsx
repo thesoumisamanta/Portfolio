@@ -1,14 +1,13 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import pic from "../assets/me/me_professional.jpg";
+import pic from "../../assets/me/me_professional.jpg";
 
 export default function Home() {
     return (
         <>
             <div
                 name="Home"
-                className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10"
-            >
+                className="max-w-screen-2xl container mx-auto px-4 md:px-20 mb-5">
                 <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
                         <div className="flex flex-col space-y-2">
@@ -33,7 +32,7 @@ export default function Home() {
                             </p>
                         </div>
                         <br />
-                        <p className="text-sm md:text-md text-justify">
+                        <p className="text-md md:text-md text-justify">
                             A passionate Full-Stack Developer with advanced expertise in the MERN stack (MongoDB, Express, React, Node.js), complemented by strong skills in JavaScript, Python, and MySQL. Proven ability to build and enhance dynamic web applications, including a React-based hackathon management platform and a responsive news app with real-time updates. Designed and implemented a document-based question-answering system using the MERN stack to analyze and interact with PDF and DOCX files. Committed to delivering scalable, high-quality software solutions and solving complex challenges with creativity and efficiency.
                         </p>
                         <br />

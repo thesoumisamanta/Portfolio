@@ -1,14 +1,13 @@
 import React from "react";
-import pic from "../assets/me/me_professional.jpg";
-
+import pic from "../../assets/me/me_professional.jpg";
+import { Link } from "react-router-dom";
+import cv from '../../assets/cv/Soumi Samanta(Resume - 21.09.24).pdf';
 
 export default function About() {
 
-    
-
     return (
         <>
-            <div name="About" className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-20 mb-10">
+            <div name="About" className="min-h-[470px] max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10 mb-3">
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                     <div className="about-img flex-shrink-0">
                         <img
@@ -33,13 +32,15 @@ export default function About() {
                                 <strong className="text-yellow-400">Career Goals:</strong> I aim to advance as a software developer, gaining experience with the latest technologies and contributing to impactful projects.
                             </li>
                         </ul>
-                        <a
-                            href="../assets/cv/Soumi Samanta(Resume - 21.09.24).pdf "
-                            className="inline-block mt-8 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
-                            download
-                        >
-                            Download CV
-                        </a>
+                        <div className="text-center md:text-left"> {/* Center the button on mobile */}
+                            <a
+                                href={cv}
+                                className="inline-block mt-8 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+                                download
+                            >
+                                Download CV
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

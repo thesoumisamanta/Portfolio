@@ -1,23 +1,23 @@
 import React from "react";
-import java from "../assets/images/java.png";
-import python from "../assets/images/python.webp";
-import mongoDB from "../assets/images/mongodb.jpg";
-import express from "../assets/images/express.png";
-import reactjs from "../assets/images/reactjs.png";
-import nodejs from "../assets/images/node.png";
-import html5 from "../assets/images/html.png";
-import css3 from "../assets/images/css.jpg";
-import mysql from "../assets/images/mysql.png";
-import bootstrap from "../assets/images/bootstrap.jpg";
-import tailwind from "../assets/images/tailwindcss.png";
-import flask from "../assets/images/flask.png";
-import redux from "../assets/images/redux.png";
-import angular from "../assets/images/angular.png";
-import vscode from "../assets/images/vscode.jpg";
-import replit from "../assets/images/replit.png";
-import sublime from "../assets/images/sublime.jpg";
-import github from "../assets/images/github.jpg";
-import appwrite from "../assets/images/appwrite.jpg";
+import java from "../../assets/images/java.png";
+import python from "../../assets/images/python.webp";
+import mongoDB from "../../assets/images/mongodb.jpg";
+import express from "../../assets/images/express.png";
+import reactjs from "../../assets/images/reactjs.png";
+import nodejs from "../../assets/images/node.png";
+import html5 from "../../assets/images/html.png";
+import css3 from "../../assets/images/css.jpg";
+import mysql from "../../assets/images/mysql.png";
+import bootstrap from "../../assets/images/bootstrap.jpg";
+import tailwind from "../../assets/images/tailwindcss.png";
+import flask from "../../assets/images/flask.png";
+import redux from "../../assets/images/redux.png";
+import angular from "../../assets/images/angular.png";
+import vscode from "../../assets/images/vscode.jpg";
+import replit from "../../assets/images/replit.png";
+import sublime from "../../assets/images/sublime.jpg";
+import github from "../../assets/images/github.jpg";
+import appwrite from "../../assets/images/appwrite.jpg";
 
 
 
@@ -75,7 +75,7 @@ const categories = [
 
 export default function Skills() {
     return (
-        <div name="Skills" className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-20 mb-5">
+        <div name="Skills" className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10 mb-5">
             <h1 className="text-3xl font-bold mb-5 text-center">Skills</h1>
 
             <div className="flex flex-wrap justify-center space-y-6 md:space-x-6 md:space-y-0 mb-6 px-4">
