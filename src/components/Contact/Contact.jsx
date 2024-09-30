@@ -1,13 +1,56 @@
-import { Link } from "react-router-dom"
+import { useState } from "react";
+import emailjs from "emailjs-com";
 
-export default function Contact(){
+
+export default function Contact() {
+    const [messageStatus, setMessageStatus] = useState(""); // For success or error message
+    const [showMessage, setShowMessage] = useState(false);  // To control the visibility of the flash message
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_4jm2wra", // Replace with your EmailJS service ID
+                "template_a46ju9a", // Replace with your EmailJS template ID
+                e.target,
+                "FwVueowY3CcfkdEH1" // Replace with your EmailJS user ID
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    setMessageStatus("Message sent successfully!");
+                    setShowMessage(true); // Show the success message
+                },
+                (error) => {
+                    console.log(error.text);
+                    setMessageStatus("Failed to send message.");
+                    setShowMessage(true); // Show the error message
+                }
+            );
+
+        e.target.reset(); // Reset the form after submission
+    };
+
     return (
         <>
-            <div className="relative flex items-top justify-center mt-10 mb-24 sm:items-center sm:pt-0">
+            {/* Flash Message */}
+            {showMessage && (
+                <div className="mt-16 fixed top-0 left-0 right-0 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded" role="alert">
+                    <strong className="font-bold">{messageStatus}</strong>
+                    <span className="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={() => setShowMessage(false)}>
+                        <svg className="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <title>Close</title>
+                            <path d="M14.348 5.652a1 1 0 00-1.414 0L10 8.586 7.066 5.652a1 1 0 10-1.414 1.414L8.586 10l-2.934 2.934a1 1 0 101.414 1.414L10 11.414l2.934 2.934a1 1 0 001.414-1.414L11.414 10l2.934-2.934a1 1 0 000-1.414z" />
+                        </svg>
+                    </span>
+                </div>
+            )}
+
+            <div className="relative flex items-top justify-center mt-10 mb-20 sm:items-center sm:pt-0">
                 <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <h2 className="text-center text-3xl font-bold">Contact Me</h2>
                     <div className="mt-12 overflow-hidden">
-                        
                         <div className="grid grid-cols-1 md:grid-cols-2">
                             <div className="p-6 mr-2 bg-gray-700 sm:rounded-lg">
                                 <h1 className="text-3xl sm:text-4xl text-gray-200 font-extrabold tracking-tight">
@@ -16,96 +59,26 @@ export default function Contact(){
                                 <p className="text-normal text-lg sm:text-xl font-medium text-gray-400 mt-2">
                                     Fill in the form to connect with me
                                 </p>
-
-                                <div className="flex items-center mt-8 text-gray-300">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        viewBox="0 0 24 24"
-                                        className="w-8 h-8 text-gray-300"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="1.5"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                        />
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="1.5"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                        />
-                                    </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        Burdwan, West Bengal, Pin-713125
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center mt-4 text-gray-300">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        viewBox="0 0 24 24"
-                                        className="w-8 h-8 text-gray-300"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="1.5"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                        />
-                                    </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        +91 9883057054
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center mt-2 text-gray-300">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        viewBox="0 0 24 24"
-                                        className="w-8 h-8 text-gray-300"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="1.5"
-                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                        />
-                                    </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        samantasoumi10@gmail.com
-                                    </div>
-                                </div>
+                                {/* Contact details */}
                             </div>
 
-                            <form className="p-6 flex flex-col justify-center">
+                            <form className="p-6 flex flex-col justify-center" onSubmit={sendEmail}>
                                 <div className="flex flex-col">
-                                    <label for="name" className="hidden">
+                                    <label htmlFor="name" className="hidden">
                                         Full Name
                                     </label>
                                     <input
-                                        type="name"
+                                        type="text"
                                         name="name"
                                         id="name"
                                         placeholder="Full Name"
                                         className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-600 border border-gray-400 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
+                                        required
                                     />
                                 </div>
 
                                 <div className="flex flex-col mt-2">
-                                    <label for="email" className="hidden">
+                                    <label htmlFor="email" className="hidden">
                                         Email
                                     </label>
                                     <input
@@ -114,19 +87,20 @@ export default function Contact(){
                                         id="email"
                                         placeholder="Email"
                                         className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-600 border border-gray-400 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
+                                        required
                                     />
                                 </div>
 
                                 <div className="flex flex-col mt-2">
-                                    <label for="tel" className="hidden">
-                                        Number
+                                    <label htmlFor="message" className="hidden">
+                                        Message
                                     </label>
-                                    <input
-                                        type="tel"
-                                        name="tel"
-                                        id="tel"
-                                        placeholder="Telephone Number"
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        placeholder="Your Message"
                                         className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-600 border border-gray-400 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
+                                        required
                                     />
                                 </div>
 
@@ -142,5 +116,11 @@ export default function Contact(){
                 </div>
             </div>
         </>
-    )
+    );
 }
+
+
+
+
+
+
