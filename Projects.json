@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Hackathon Website",
+        "description": [
+            "Developed a React-based UI for managing and displaying detailed hackathon information, including prizes, organizers, and submission requirements.",
+            "Integrated React Router for seamless navigation, enabling users to view, edit, or delete hackathon events from a dynamic interface.",
+            "Planned future enhancements to add backend integration and database support for advanced CRUD operations and full hackathon management."
+        ],
+        "link": "https://hackathon-eosin-three.vercel.app/"
+    },
+    {
+        "title": "News App",
+        "description": [
+            "Built a responsive news app using React.js to display real-time news across various categories.",
+            "Integrated News API for dynamic headline updates and implemented infinite scrolling for a smooth user experience.",
+            "Used React Router for easy navigation and added a progress bar to improve loading feedback."
+        ],
+        "link": "https://github.com/thesoumisamanta/News-App"
+    },
+    {
+        "title": "Document-Based Question Answering System",
+        "description": [
+            "Developed a MERN stack app to analyze PDF and DOCX files, extracting text and answering questions based on document content.",
+            "Utilized pdf-parse and mammoth for text extraction and designed a responsive React UI for file uploads and question display.",
+            "Enabled temporary storage for content analysis and improved answer accuracy by extracting relevant sections when the topic is found."
+        ],
+        "link": "https://github.com/thesoumisamanta/Question-Answer"
+    }
+]
