@@ -1,36 +1,42 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
-
+import { init, send } from "@emailjs/browser";
 
 export default function Contact() {
     const [messageStatus, setMessageStatus] = useState(""); // For success or error message
     const [showMessage, setShowMessage] = useState(false);  // To control the visibility of the flash message
 
+    // Initialize EmailJS with your user ID
+    init(import.meta.env.VITE_EMAIL_USER_ID);
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                process.env.REACT_APP_EMAIL_SERVICE_ID,
-                process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-                e.target,
-                process.env.REACT_APP_EMAIL_USER_ID
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    setMessageStatus("Message sent successfully!");
-                    setShowMessage(true); // Show the success message
-                },
-                (error) => {
-                    console.log(error.text);
-                    setMessageStatus("Failed to send message.");
-                    setShowMessage(true); // Show the error message
-                }
-            );
+        const templateParams = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+        };
 
-        e.target.reset(); // Reset the form after submission
+        send(
+            import.meta.env.VITE_EMAIL_SERVICE_ID,
+            import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+            templateParams, // Pass the form data as an object
+            import.meta.env.VITE_EMAIL_USER_ID
+        )
+            .then((result) => {
+                console.log(result.text);
+                setMessageStatus("Message sent successfully!");
+                setShowMessage(true); // Show success message
+            })
+            .catch((error) => {
+                console.error("EmailJS Error:", error);
+                setMessageStatus("Failed to send message.");
+                setShowMessage(true); // Show error message
+            });
+
+        e.target.reset(); // Reset form after submission
     };
+
 
     return (
         <>
@@ -59,14 +65,11 @@ export default function Contact() {
                                 <p className="text-normal text-lg sm:text-xl font-medium text-gray-400 mt-2">
                                     Fill in the form to connect with me
                                 </p>
-                                {/* Contact details */}
                             </div>
 
                             <form className="p-6 flex flex-col justify-center" onSubmit={sendEmail}>
                                 <div className="flex flex-col">
-                                    <label htmlFor="name" className="hidden">
-                                        Full Name
-                                    </label>
+                                    <label htmlFor="name" className="hidden">Full Name</label>
                                     <input
                                         type="text"
                                         name="name"
@@ -78,9 +81,7 @@ export default function Contact() {
                                 </div>
 
                                 <div className="flex flex-col mt-2">
-                                    <label htmlFor="email" className="hidden">
-                                        Email
-                                    </label>
+                                    <label htmlFor="email" className="hidden">Email</label>
                                     <input
                                         type="email"
                                         name="email"
@@ -92,9 +93,7 @@ export default function Contact() {
                                 </div>
 
                                 <div className="flex flex-col mt-2">
-                                    <label htmlFor="message" className="hidden">
-                                        Message
-                                    </label>
+                                    <label htmlFor="message" className="hidden">Message</label>
                                     <textarea
                                         name="message"
                                         id="message"
@@ -118,9 +117,3 @@ export default function Contact() {
         </>
     );
 }
-
-
-
-
-
-
