@@ -18,10 +18,10 @@ export default function Contact() {
         };
 
         send(
-            import.meta.env.VITE_EMAIL_SERVICE_ID,
-            import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-            templateParams, // Pass the form data as an object
-            import.meta.env.VITE_EMAIL_USER_ID
+            import.meta.env.VITE_EMAIL_SERVICE_ID,   // Service ID
+            import.meta.env.VITE_EMAIL_TEMPLATE_ID,  // Template ID
+            templateParams,                          // Template params
+            import.meta.env.VITE_EMAIL_USER_ID       // Public key (User ID)
         )
             .then((result) => {
                 console.log(result.text);
@@ -36,6 +36,7 @@ export default function Contact() {
 
         e.target.reset(); // Reset form after submission
     };
+
 
 
     return (
