@@ -11,10 +11,10 @@ export default function Contact() {
 
         emailjs
             .sendForm(
-                "service_4jm2wra", // Replace with your EmailJS service ID
-                "template_a46ju9a", // Replace with your EmailJS template ID
+                process.env.REACT_APP_EMAIL_SERVICE_ID,
+                process.env.REACT_APP_EMAIL_TEMPLATE_ID,
                 e.target,
-                "FwVueowY3CcfkdEH1" // Replace with your EmailJS user ID
+                process.env.REACT_APP_EMAIL_USER_ID
             )
             .then(
                 (result) => {
