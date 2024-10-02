@@ -2,11 +2,11 @@ import { useState } from "react";
 import { init, send } from "@emailjs/browser";
 
 export default function Contact() {
-    const [messageStatus, setMessageStatus] = useState(""); // For success or error message
-    const [showMessage, setShowMessage] = useState(false);  // To control the visibility of the flash message
+    const [messageStatus, setMessageStatus] = useState("");
+    const [showMessage, setShowMessage] = useState(false);
 
-    // Initialize EmailJS with your user ID
-    init(import.meta.env.VITE_EMAIL_USER_ID);
+    // Directly passing the public key (User ID) here
+    init("FwVueowY3CcfkdEH1");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -18,10 +18,10 @@ export default function Contact() {
         };
 
         send(
-            import.meta.env.VITE_EMAIL_SERVICE_ID,   // Service ID
-            import.meta.env.VITE_EMAIL_TEMPLATE_ID,  // Template ID
+            import.meta.env.VITE_EMAIL_SERVICE_ID,   // Service ID from env
+            import.meta.env.VITE_EMAIL_TEMPLATE_ID,  // Template ID from env
             templateParams,                          // Template params
-            import.meta.env.VITE_EMAIL_USER_ID       // Public key (User ID)
+            "FwVueowY3CcfkdEH1"                   // Public key (User ID) directly added
         )
             .then((result) => {
                 console.log(result.text);
@@ -36,8 +36,6 @@ export default function Contact() {
 
         e.target.reset(); // Reset form after submission
     };
-
-
 
     return (
         <>
