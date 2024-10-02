@@ -1,9 +1,16 @@
 import { useState } from "react";
 import { init, send } from "@emailjs/browser";
+import EmailValidation from "./EmailValidation";
 
 export default function Contact() {
     const [messageStatus, setMessageStatus] = useState("");
     const [showMessage, setShowMessage] = useState(false);
+
+    const [validEmail, setValidEmail] = useState('');
+
+    const handleValidEmail = (email) => {
+        setValidEmail(email);
+    };
 
     // Directly passing the public key (User ID) here
     init("FwVueowY3CcfkdEH1");
@@ -11,9 +18,15 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        if (!validEmail) {
+            setMessageStatus("Please enter a valid email address.");
+            setShowMessage(true);
+            return;
+        }
+
         const templateParams = {
             name: e.target.name.value,
-            email: e.target.email.value,
+            email: validEmail,
             message: e.target.message.value,
         };
 
@@ -79,7 +92,7 @@ export default function Contact() {
                                     />
                                 </div>
 
-                                <div className="flex flex-col mt-2">
+                                {/* <div className="flex flex-col mt-2">
                                     <label htmlFor="email" className="hidden">Email</label>
                                     <input
                                         type="email"
@@ -89,7 +102,9 @@ export default function Contact() {
                                         className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-600 border border-gray-400 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
                                         required
                                     />
-                                </div>
+                                </div> */}
+
+                                <EmailValidation onValidEmail={handleValidEmail} />
 
                                 <div className="flex flex-col mt-2">
                                     <label htmlFor="message" className="hidden">Message</label>
