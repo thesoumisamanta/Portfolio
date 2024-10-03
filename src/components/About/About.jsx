@@ -1,6 +1,6 @@
 import React from "react";
 import pic from "../../../public/assets/me/me_professional.jpg";
-import cv from '../../../public/assets/cv/Soumi Samanta(Resume - 21.09.24).pdf';
+import cv from '../../../public/assets/cv/Soumi Samanta - 03.10.24.pdf';
 
 export default function About() {
 
@@ -31,7 +31,7 @@ export default function About() {
                                 <strong className="text-yellow-400">Career Goals:</strong> I aim to advance as a software developer, gaining experience with the latest technologies and contributing to impactful projects.
                             </li>
                         </ul>
-                        <div className="text-center md:text-left"> {/* Center the button on mobile */}
+                        <div className="text-center md:text-left"> 
                             <a
                                 href={cv}
                                 className="inline-block mt-8 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"

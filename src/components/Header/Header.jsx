@@ -15,14 +15,14 @@ export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0 bg-gray-900">
             <nav className="text-white border-gray-200 px-6 lg:px-6 py-2.5 h-16 flex items-center justify-between">
-                {/* Left spacer to keep the nav centered */}
+                
                 <div className="hidden lg:block lg:flex-1"></div>
 
-                {/* Mobile Menu Button */}
+                
                 <button
                     onClick={toggleMenu}
                     className="text-white block lg:hidden ml-auto focus:outline-none focus:ring-0"
-                    style={{ backgroundColor: 'transparent' }} // Prevent any background color
+                    style={{ backgroundColor: 'transparent' }} 
                 >
                     <svg
                         className="w-6 h-6"
@@ -40,7 +40,7 @@ export default function Header() {
                     </svg>
                 </button>
 
-                {/* Navigation links */}
+                
                 <div
                     className={`${isOpen ? "block" : "hidden"
                         } w-full lg:flex lg:items-center lg:w-auto lg:static absolute top-16 left-0 right-0 bg-gray-900 lg:bg-transparent`}
@@ -120,7 +120,7 @@ export default function Header() {
                     </ul>
                 </div>
 
-                {/* Right spacer to balance out the left */}
+                
                 <div className="hidden lg:block lg:flex-1"></div>
             </nav>
         </header>
