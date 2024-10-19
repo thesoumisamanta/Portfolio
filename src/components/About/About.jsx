@@ -1,6 +1,6 @@
 import React from "react";
 import pic from "../../../public/assets/me/me_professional.jpg";
-import cv from '../../../public/assets/cv/Soumi Samanta - 03.10.24.pdf';
+import cv from '../../../public/assets/cv/Soumi - 18.10.2024.pdf';
 
 export default function About() {
 
@@ -31,15 +31,23 @@ export default function About() {
                                 <strong className="text-yellow-400">Career Goals:</strong> I aim to advance as a software developer, gaining experience with the latest technologies and contributing to impactful projects.
                             </li>
                         </ul>
-                        <div className="text-center md:text-left"> 
+                        <div className="text-center md:text-left">
                             <a
                                 href={cv}
-                                className="inline-block mt-8 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+                                className="mt-8 bg-white font-bold text-blue-800 py-2 px-6 rounded hover:bg-blue-200 inline-block"
                                 download
                             >
-                                Download CV
+                                <span className="flex items-center justify-center">
+                                    <img
+                                        src="/assets/icon/download.png"
+                                        alt="Download Icon"
+                                        className="w-5 h-5 mr-2"
+                                    />
+                                    CV
+                                </span>
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>
