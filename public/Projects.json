@@ -1,30 +1,20 @@
 [
     {
-        "title": "Hackathon Website",
+        "title": "Aviio Airport Operations Mobile App",
         "description": [
-            "Developed a React-based UI for managing and displaying detailed hackathon information, including prizes, organizers, and submission requirements.",
-            "Integrated React Router for seamless navigation, enabling users to view, edit, or delete hackathon events from a dynamic interface.",
-            "Planned future enhancements to add backend integration and database support for advanced CRUD operations and full hackathon management."
+            {
+                "subtitle": "1.Platform Overview & Purpose",
+                "details": "Aviio is Adani Airports Holdings Ltd's digital operations platform that connects all airport stakeholders — airlines, ground handlers, security, retail, etc. — on a single system, enabling real-time data sharing, improved collaboration, and smoother airport operations."
+            },
+            {
+                "subtitle": "2. Passenger-Focused Features",
+                "details": "The platform provides passengers with live updates such as security wait times, gate changes, and baggage belt status, aiming to make travel more predictable and seamless."
+            },
+            {
+                "subtitle": "3. Technology & Implementation",
+                "details": "Developed using Flutter, BLoC architecture, and Firebase, Aviio delivers high-performance, scalable features with structured state management, real-time cloud integration, and push notifications to ensure timely updates and smooth operations."
+            }
         ],
-        "link": "https://hackathon-eosin-three.vercel.app/"
-    },
-    {
-        "title": "Food Product Explorer App",
-        "description": [
-            "Developed a Food Product Explorer application using React, Vite, and TailwindCSS, enabling users to search for and filter food products from the OpenFoodFacts API.",
-            "The application features real-time search and filtering functionalities directly in the Navbar for an intuitive user experience.",
-            "Users can view detailed product information and have options to add products to their cart or wishlist. The application implements user authentication using localStorage, allowing users to log in, register, and manage their wishlist and cart effectively."
-        ],
-        "link": "https://github.com/thesoumisamanta/Food-Product-Explorer-App.git"
-    },
-    {
-        "title": "Document-Based Question Answering System",
-        "description": [
-            "Developed a MERN stack app to analyze PDF and DOCX files, extracting text and answering questions based on document content.",
-            "Utilized pdf-parse and mammoth for text extraction and designed a responsive React UI for file uploads and question display.",
-            "Enabled temporary storage for content analysis and improved answer accuracy by extracting relevant sections when the topic is found."
-        ],
-        "link": "https://github.com/thesoumisamanta/Question-Answer.git"
+        "link": "https://play.google.com/store/apps/details?id=com.adani.aahluc"
     }
 ]
-

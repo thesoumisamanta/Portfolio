@@ -26,9 +26,9 @@ const categories = [
         id: 1,
         title: "Languages",
         items: [
-            { logo: java, name: "Dart", proficiency: 85 },
-            { logo: python, name: "Javascript", proficiency: 80 },
-            { logo: python, name: "Python", proficiency: 70 },
+            { logo: "/assets/images/java.png", name: "Dart", proficiency: 85 },
+            { logo: "/assets/images/javascript.png", name: "Javascript", proficiency: 80 },
+            { logo: "/assets/images/python.webp", name: "Python", proficiency: 70 },
         ],
     },
     {
@@ -37,6 +37,15 @@ const categories = [
         items: [
             { logo: mongoDB, name: "MongoDB", proficiency: 80 },
             { logo: mysql, name: "MySQL", proficiency: 70 },
+        ],
+    },
+    {
+        id: 2,
+        title: "OS",
+        items: [
+            { logo: mongoDB, name: "Windows", proficiency: 80 },
+            { logo: mysql, name: "Linux", proficiency: 70 },
+            { logo: mysql, name: "Android", proficiency: 70 },
         ],
     },
     {
@@ -54,6 +63,7 @@ const categories = [
         title: "Tools",
         items: [
             { logo: vscode, name: "Visual Studio Code", proficiency: 95 },
+            { logo: sublime, name: "Antigravity", proficiency: 75 },
             { logo: replit, name: "Replit", proficiency: 80 },
             { logo: sublime, name: "Sublime Text", proficiency: 75 },
         ],

@@ -1,6 +1,4 @@
-import React from "react";
 import { ReactTyped } from "react-typed";
-import pic from "../../../public/assets/me/me_professional.jpg";
 
 export default function Home() {
     return (
@@ -70,7 +68,7 @@ export default function Home() {
 
                             {/* Profile Image */}
                             <img
-                                src={pic}
+                                src="/assets/me/me_professional.jpg"
                                 className="relative rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-4 border-white/10 shadow-glow-lg animate-float-slow hover:scale-105 transition-transform duration-500"
                                 alt="Soumi Samanta"
                             />

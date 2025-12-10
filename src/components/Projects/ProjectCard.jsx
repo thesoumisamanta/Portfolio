@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ProjectCard({ title, description, link }) {
     return (
         <div className="group glass-card rounded-2xl p-6 m-4 max-w-sm w-full hover-lift hover:shadow-glow-lg transition-all duration-500 relative overflow-hidden">
@@ -14,16 +12,14 @@ export default function ProjectCard({ title, description, link }) {
                 </h2>
 
                 {/* Description List */}
-                <ul className="space-y-2 mb-6 flex-grow text-gray-300">
-                    {description.map((point, index) => (
-                        <li key={index} className="flex items-start gap-2 text-sm">
-                            <svg className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>{point}</span>
-                        </li>
+                <div className="space-y-4 mb-6 flex-grow text-gray-300">
+                    {description.map((item, index) => (
+                        <div key={index}>
+                            <h3 className="font-semibold text-gray-100">{item.subtitle}:</h3>
+                            <p className="text-sm ml-2">{item.details}</p>
+                        </div>
                     ))}
-                </ul>
+                </div>
 
                 {/* View Button */}
                 <a href={link} target="_blank" rel="noopener noreferrer" className="mt-auto">
@@ -39,5 +35,5 @@ export default function ProjectCard({ title, description, link }) {
             {/* Decorative Corner Element */}
             <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
-    )
+    );
 }

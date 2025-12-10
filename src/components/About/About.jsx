@@ -1,4 +1,3 @@
-import cv from '../../../public/assets/cv/Soumi_Samanta.pdf';
 
 export default function About() {
 
@@ -81,7 +80,7 @@ export default function About() {
                             {/* Download CV Button */}
                             <div className="text-center md:text-left animate-fadeIn delay-300">
                                 <a
-                                    href={cv}
+                                    href="/assets/cv/Soumi_Samanta.pdf"
                                     className="inline-flex items-center gap-3 btn-primary hover-lift group"
                                     download
                                 >
