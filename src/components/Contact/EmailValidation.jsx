@@ -52,13 +52,14 @@ export default function EmailValidation({ onValidEmail }) {
     };
 
     return (
-        <div>
+        <div className="space-y-2">
+            <label htmlFor="name" className="text-sm font-semibold text-gray-300">Email</label>
             <input
                 type="email"
                 value={email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full mt-2 py-3 px-3 rounded-lg bg-gray-600 border border-gray-400 text-white font-semibold focus:border-blue-500 focus:outline-none"
+                className="input-glass text-white placeholder:text-gray-400 resize-none"
                 required
             />
             {error && <p className="text-red-500 mt-1">{error}</p>}
