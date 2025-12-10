@@ -1,32 +1,9 @@
-import React from "react";
-import java from "../../../public/assets/images/java.png";
-import python from "../../../public/assets/images/python.webp";
-import mongoDB from "../../../public/assets/images/mongodb.jpg";
-import express from "../../../public/assets/images/express.png";
-import reactjs from "../../../public/assets/images/reactjs.png";
-import nodejs from "../../../public/assets/images/node.png";
-import html5 from "../../../public/assets/images/html.png";
-import css3 from "../../../public/assets/images/css.jpg";
-import mysql from "../../../public/assets/images/mysql.png";
-import bootstrap from "../../../public/assets/images/bootstrap.jpg";
-import tailwind from "../../../public/assets/images/tailwindcss.png";
-import flask from "../../../public/assets/images/flask.png";
-import redux from "../../../public/assets/images/redux.png";
-import angular from "../../../public/assets/images/angular.png";
-import vscode from "../../../public/assets/images/vscode.jpg";
-import replit from "../../../public/assets/images/replit.png";
-import sublime from "../../../public/assets/images/sublime.jpg";
-import github from "../../../public/assets/images/github.jpg";
-import appwrite from "../../../public/assets/images/appwrite.jpg";
-
-
-
 const categories = [
     {
         id: 1,
         title: "Languages",
         items: [
-            { logo: "/assets/images/java.png", name: "Dart", proficiency: 85 },
+            { logo: "/assets/images/dart.webp", name: "Dart", proficiency: 85 },
             { logo: "/assets/images/javascript.png", name: "Javascript", proficiency: 80 },
             { logo: "/assets/images/python.webp", name: "Python", proficiency: 70 },
         ],
@@ -35,68 +12,69 @@ const categories = [
         id: 2,
         title: "Databases",
         items: [
-            { logo: mongoDB, name: "MongoDB", proficiency: 80 },
-            { logo: mysql, name: "MySQL", proficiency: 70 },
-        ],
-    },
-    {
-        id: 2,
-        title: "OS",
-        items: [
-            { logo: mongoDB, name: "Windows", proficiency: 80 },
-            { logo: mysql, name: "Linux", proficiency: 70 },
-            { logo: mysql, name: "Android", proficiency: 70 },
+            { logo: "/assets/images/mongodb.jpg", name: "MongoDB", proficiency: 80 },
+            { logo: "/assets/images/mysql.png", name: "MySQL", proficiency: 70 },
         ],
     },
     {
         id: 3,
-        title: "Technologies",
+        title: "OS",
         items: [
-            { logo: html5, name: "HTML5", proficiency: 95 },
-            { logo: css3, name: "CSS3", proficiency: 80 },
-            { logo: bootstrap, name: "Bootstrap", proficiency: 80 },
-            { logo: tailwind, name: "Tailwind CSS", proficiency: 80 },
+            { logo: "/assets/images/windows.png", name: "Windows", proficiency: 80 },
+            { logo: "/assets/images/linux.png", name: "Linux", proficiency: 70 },
+            { logo: "/assets/images/android.webp", name: "Android", proficiency: 70 },
         ],
     },
     {
         id: 4,
-        title: "Tools",
+        title: "State Mangaement Libraries",
         items: [
-            { logo: vscode, name: "Visual Studio Code", proficiency: 95 },
-            { logo: sublime, name: "Antigravity", proficiency: 75 },
-            { logo: replit, name: "Replit", proficiency: 80 },
-            { logo: sublime, name: "Sublime Text", proficiency: 75 },
+            { logo: "/assets/images/bloc.svg", name: "Bloc", proficiency: 92 },
+            { logo: "/assets/images/redux.png", name: "Redux", proficiency: 82 },
+            { logo: "/assets/images/getx.png", name: "GetX", proficiency: 85 },
         ],
     },
     {
         id: 5,
         title: "Platforms",
         items: [
-            { logo: github, name: "GitHub", proficiency: 90 },
-            { logo: vscode, name: "Firebase", proficiency: 95 },
-            { logo: appwrite, name: "Appwrite", proficiency: 85 },
+            { logo: "/assets/images/github.jpg", name: "GitHub", proficiency: 90 },
+            { logo: "/assets/images/firebase.png", name: "Firebase", proficiency: 95 },
+            { logo: "/assets/images/appwrite.jpg", name: "Appwrite", proficiency: 85 },
         ],
     },
     {
         id: 6,
-        title: "Library & Frameworks",
+        title: "Technologies",
         items: [
-            { logo: express, name: "Express Js", proficiency: 88 },
-            { logo: reactjs, name: "React Js", proficiency: 92 },
-            { logo: flask, name: "Flask", proficiency: 82 },
-            { logo: angular, name: "Angular Js", proficiency: 78 },
+            { logo: "/assets/images/html.png", name: "HTML5", proficiency: 95 },
+            { logo: "/assets/images/css.jpg", name: "CSS3", proficiency: 80 },
+            { logo: "/assets/images/bootstrap.jpg", name: "Bootstrap", proficiency: 80 },
+            { logo: "/assets/images/tailwindcss.png", name: "Tailwind CSS", proficiency: 80 },
         ],
     },
     {
         id: 7,
-        title: "State Mangaement Libraries",
+        title: "Tools",
         items: [
-            { logo: reactjs, name: "Bloc", proficiency: 92 },
-            { logo: flask, name: "Redux", proficiency: 82 },
-            { logo: redux, name: "GetX", proficiency: 85 },
-            { logo: angular, name: "Provider", proficiency: 78 },
+            { logo: "/assets/images/vscode.jpg", name: "Visual Studio Code", proficiency: 95 },
+            { logo: "/assets/images/antigravity.webp", name: "Antigravity", proficiency: 75 },
+            { logo: "/assets/images/replit.png", name: "Replit", proficiency: 80 },
+            { logo: "/assets/images/sublime.jpg", name: "Sublime Text", proficiency: 75 },
         ],
     },
+
+    {
+        id: 8,
+        title: "Library & Frameworks",
+        items: [
+            { logo: "/assets/images/express.png", name: "Express Js", proficiency: 88 },
+            { logo: "/assets/images/reactjs.png", name: "React Js", proficiency: 92 },
+            { logo: "/assets/images/flask.png", name: "Flask", proficiency: 82 },
+            { logo: "/assets/images/angular.png", name: "Angular Js", proficiency: 78 },
+        ],
+    },
+
 ];
 
 export default function Skills() {
