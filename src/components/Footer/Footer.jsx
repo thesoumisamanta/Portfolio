@@ -37,7 +37,7 @@ export default function Footer() {
                                 </div>
                             </div>
                             <p className="text-sm text-gray-400 leading-relaxed">
-                                Full Stack Developer passionate about creating beautiful, functional web applications with modern technologies.
+                                Full Stack Developer passionate about creating beautiful, functional Web and Android applications with modern technologies.
                             </p>
                         </div>
 

@@ -44,7 +44,7 @@ export default function Header() {
                             <h1 className="text-xl font-bold bg-gradient-to-r from-primary-300 via-accent-300 to-secondary-300 bg-clip-text text-transparent group-hover:from-primary-200 group-hover:to-secondary-200 transition-all duration-300">
                                 Soumi Samanta
                             </h1>
-                            <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Full Stack Developer</p>
+                            <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Flutter Developer</p>
                         </div>
                     </NavLink>
 

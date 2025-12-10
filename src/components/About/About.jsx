@@ -1,6 +1,4 @@
-import React from "react";
-import pic from "../../../public/assets/me/me_professional.jpg";
-import cv from '../../../public/assets/cv/Soumi - 18.10.2024.pdf';
+import cv from '../../../public/assets/cv/Soumi_Samanta.pdf';
 
 export default function About() {
 
@@ -9,19 +7,6 @@ export default function About() {
             <div name="About" className="min-h-screen max-w-screen-2xl container mx-auto px-4 md:px-20 py-20 flex items-center">
                 <div className="glass-card rounded-3xl p-8 md:p-12 hover-lift">
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-                        {/* Profile Image */}
-                        <div className="about-img flex-shrink-0 animate-scaleIn">
-                            <div className="relative group">
-                                {/* Glow effect */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
-
-                                <img
-                                    src={pic}
-                                    alt="About Me"
-                                    className="relative w-52 h-52 md:w-80 md:h-80 rounded-full object-cover border-4 border-white/20 shadow-glow animate-float hover:scale-105 transition-transform duration-500"
-                                />
-                            </div>
-                        </div>
 
                         {/* Content */}
                         <div className="about-content flex-1 space-y-6 animate-fadeIn delay-200">
@@ -31,10 +16,6 @@ export default function About() {
                                     Me
                                 </span>
                             </h2>
-
-                            <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center md:text-left">
-                                I am a dedicated Full-Stack Developer with expertise in the MERN stack (MongoDB, Express, React, Node.js) and a strong background in JavaScript, Python, C, and MySQL. I excel in delivering high-quality, scalable software solutions and have a passion for creating responsive and user-friendly web applications.
-                            </p>
 
                             <ul className="space-y-4 text-base md:text-lg text-center md:text-left">
                                 <li className="glass-card p-4 rounded-xl hover:bg-white/10 transition-all duration-300 hover-lift">
@@ -46,7 +27,24 @@ export default function About() {
                                         </div>
                                         <div>
                                             <strong className="text-primary-400">Education and Academic Journey:</strong>
-                                            <p className="text-gray-300 mt-1">I completed my undergraduate studies at Burdwan MUC Women's College with a CGPA of 9.28. I have also recently completed my master's degree from The University of Burdwan.</p>
+                                            <p className="text-gray-300 mt-1">I completed my Bachelor’s degree in Computer Science from Burdwan M.U.C. Women’s College with an SGPA of 9.28 in 2022. After that, I completed my Master’s degree in Computer Science from The University of Burdwan with an SGPA of 8.50 in 2024.</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li className="glass-card p-4 rounded-xl hover:bg-white/10 transition-all duration-300 hover-lift delay-100">
+                                    <div className="flex items-start gap-3">
+                                        <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-secondary-500 to-primary-500 flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 7V6a3 3 0 013-3h0a3 3 0 013 3v1m-9 0h12a2 2 0 012 
+       2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2z" />
+                                            </svg>
+
+                                        </div>
+                                        <div>
+                                            <strong className="text-secondary-400">Work Experience:</strong>
+                                            <p className="text-gray-300 mt-1">I am currently working as a Flutter Developer at Aiinhome Technologies Pvt. Ltd., where I contribute to the Aviio Airport Operations project for Adani Airports. My role focuses on building responsive and user-friendly mobile interfaces, integrating REST APIs, and ensuring smooth data flow across modules. I work closely with cross-functional teams in an Agile environment to deliver production-level features, optimize performance, and maintain clean, reusable code for a large-scale, real-time airport operations platform.</p>
                                         </div>
                                     </div>
                                 </li>

@@ -26,16 +26,17 @@ const categories = [
         id: 1,
         title: "Languages",
         items: [
-            { logo: java, name: "JavaScript", proficiency: 90 },
-            { logo: python, name: "Python", proficiency: 85 },
+            { logo: java, name: "Dart", proficiency: 85 },
+            { logo: python, name: "Javascript", proficiency: 80 },
+            { logo: python, name: "Python", proficiency: 70 },
         ],
     },
     {
         id: 2,
         title: "Databases",
         items: [
-            { logo: mongoDB, name: "MongoDB", proficiency: 88 },
-            { logo: mysql, name: "MySQL", proficiency: 85 },
+            { logo: mongoDB, name: "MongoDB", proficiency: 80 },
+            { logo: mysql, name: "MySQL", proficiency: 70 },
         ],
     },
     {
@@ -43,9 +44,9 @@ const categories = [
         title: "Technologies",
         items: [
             { logo: html5, name: "HTML5", proficiency: 95 },
-            { logo: css3, name: "CSS3", proficiency: 92 },
-            { logo: bootstrap, name: "Bootstrap", proficiency: 88 },
-            { logo: tailwind, name: "Tailwind CSS", proficiency: 90 },
+            { logo: css3, name: "CSS3", proficiency: 80 },
+            { logo: bootstrap, name: "Bootstrap", proficiency: 80 },
+            { logo: tailwind, name: "Tailwind CSS", proficiency: 80 },
         ],
     },
     {
@@ -55,20 +56,35 @@ const categories = [
             { logo: vscode, name: "Visual Studio Code", proficiency: 95 },
             { logo: replit, name: "Replit", proficiency: 80 },
             { logo: sublime, name: "Sublime Text", proficiency: 75 },
-            { logo: github, name: "GitHub", proficiency: 90 },
-            { logo: appwrite, name: "Appwrite", proficiency: 85 },
         ],
     },
     {
         id: 5,
-        title: "Frameworks",
+        title: "Platforms",
+        items: [
+            { logo: github, name: "GitHub", proficiency: 90 },
+            { logo: vscode, name: "Firebase", proficiency: 95 },
+            { logo: appwrite, name: "Appwrite", proficiency: 85 },
+        ],
+    },
+    {
+        id: 6,
+        title: "Library & Frameworks",
         items: [
             { logo: express, name: "Express Js", proficiency: 88 },
             { logo: reactjs, name: "React Js", proficiency: 92 },
-            { logo: nodejs, name: "Node Js", proficiency: 87 },
             { logo: flask, name: "Flask", proficiency: 82 },
-            { logo: redux, name: "Redux", proficiency: 85 },
             { logo: angular, name: "Angular Js", proficiency: 78 },
+        ],
+    },
+    {
+        id: 7,
+        title: "State Mangaement Libraries",
+        items: [
+            { logo: reactjs, name: "Bloc", proficiency: 92 },
+            { logo: flask, name: "Redux", proficiency: 82 },
+            { logo: redux, name: "GetX", proficiency: 85 },
+            { logo: angular, name: "Provider", proficiency: 78 },
         ],
     },
 ];

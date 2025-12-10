@@ -28,9 +28,9 @@ export default function Home() {
                                 <ReactTyped
                                     className="font-bold bg-gradient-to-r from-primary-400 to-accent-500 bg-clip-text text-transparent"
                                     strings={[
-                                        "Full Stack Developer",
+                                        "Flutter Developer",
                                         "Frontend Developer",
-                                        "Backend Developer",
+                                        "Android Developer",
                                         "Web Developer",
                                         "Software Developer"
                                     ]}
@@ -41,9 +41,8 @@ export default function Home() {
                             </p>
                         </div>
 
-                        {/* Bio Description */}
-                        <p className="text-base md:text-lg text-gray-300 leading-relaxed text-justify animate-fadeInLeft delay-400">
-                            A passionate Full-Stack Developer with advanced expertise in the MERN stack (MongoDB, Express, React, Node.js), complemented by strong skills in JavaScript, Python, and MySQL. Proven ability to build and enhance dynamic web applications, including a React-based hackathon management platform and a responsive news app with real-time updates. Designed and implemented a document-based question-answering system using the MERN stack to analyze and interact with PDF and DOCX files. Committed to delivering scalable, high-quality software solutions and solving complex challenges with creativity and efficiency.
+                        <p className="text-base md:text-2xl text-gray-300 leading-relaxed text-justify animate-fadeInLeft delay-400">
+                            I'm <span className="font-bold">Soumi Samanta</span>, a passionate <span className="font-extrabold bg-gradient-to-r from-primary-400 text-pink-400 bg-clip-text text-transparent">Frontend & Flutter Developer</span> specializing in building responsive, user-friendly, and high-performance applications. I'm currently working at <span className="font-bold text-white">Aiinhome Technologies Pvt. Ltd.</span>, where I contribute to a live airline-based project with a strong focus on <span className="font-bold text-primary-400">Flutter UI development</span>, REST API integration, and seamless user experience design. I have hands-on experience in building real-world applications such as the <span className="font-bold text-accent-400">Aviio Airport Operations App</span> and the <span className="font-bold text-accent-400">Food Product Explorer App</span>, showcasing my ability to solve problems, design intuitive interfaces, and deliver production-ready features. My tech stack includes <span className="font-bold text-primary-300">Flutter, React.js, Redux, Tailwind CSS, Node.js, Express.js, MySQL, MongoDB</span>, and more, supported by strong communication and collaboration skills.
                         </p>
 
                         {/* CTA Buttons */}
@@ -76,9 +75,7 @@ export default function Home() {
                                 alt="Soumi Samanta"
                             />
 
-                            {/* Decorative Rings */}
-                            <div className="absolute -inset-4 border-2 border-primary-500/30 rounded-full animate-spin-slow"></div>
-                            <div className="absolute -inset-8 border-2 border-accent-500/20 rounded-full animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
+                            
                         </div>
                     </div>
                 </div>
