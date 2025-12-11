@@ -57,7 +57,7 @@ export default function About() {
                                         </div>
                                         <div>
                                             <strong className="text-secondary-400">Passion and Interests:</strong>
-                                            <p className="text-gray-300 mt-1">I enjoy designing web pages with innovative ideas and continuously seek to explore and expand my knowledge of web development.</p>
+                                            <p className="text-gray-300 mt-1">I enjoy developing applications and  web pages with innovative ideas and continuously seek to explore and expand my knowledge of development.</p>
                                         </div>
                                     </div>
                                 </li>

@@ -1,20 +1,56 @@
 [
-    {
-        "title": "Aviio Airport Operations Mobile App",
-        "description": [
-            {
-                "subtitle": "1.Platform Overview & Purpose",
-                "details": "Aviio is Adani Airports Holdings Ltd's digital operations platform that connects all airport stakeholders — airlines, ground handlers, security, retail, etc. — on a single system, enabling real-time data sharing, improved collaboration, and smoother airport operations."
-            },
-            {
-                "subtitle": "2. Passenger-Focused Features",
-                "details": "The platform provides passengers with live updates such as security wait times, gate changes, and baggage belt status, aiming to make travel more predictable and seamless."
-            },
-            {
-                "subtitle": "3. Technology & Implementation",
-                "details": "Developed using Flutter, BLoC architecture, and Firebase, Aviio delivers high-performance, scalable features with structured state management, real-time cloud integration, and push notifications to ensure timely updates and smooth operations."
-            }
-        ],
-        "link": "https://play.google.com/store/apps/details?id=com.adani.aahluc"
-    }
+  {
+    "title": "Aviio Airport Operations Mobile App",
+    "description": [
+      {
+        "subtitle": "1.Platform Overview & Purpose",
+        "details": "Aviio is Adani Airports Holdings Ltd's digital operations platform that connects all airport stakeholders — airlines, ground handlers, security, retail, etc. — on a single system, enabling real-time data sharing, improved collaboration, and smoother airport operations."
+      },
+      {
+        "subtitle": "2. Passenger-Focused Features",
+        "details": "The platform provides passengers with live updates such as security wait times, gate changes, and baggage belt status, aiming to make travel more predictable and seamless."
+      },
+      {
+        "subtitle": "3. Technology & Implementation",
+        "details": "Developed using Flutter, BLoC architecture, and Firebase, Aviio delivers high-performance, scalable features with structured state management, real-time cloud integration, and push notifications to ensure timely updates and smooth operations."
+      }
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.adani.aahluc"
+  },
+  {
+    "title": "Travel Diary – Social Travel Experience Platform",
+    "description": [
+      {
+        "subtitle": "1. Platform Purpose & Core Experience",
+        "details": "Travel Diary is a social travel-sharing platform that allows users to document trips, share posts and stories, connect with other travelers, chat in real time, and build a personalized travel community through photos, videos, and meaningful interactions."
+      },
+      {
+        "subtitle": "2. User-Centric Features",
+        "details": "The platform supports posting travel moments with images/videos, following other travelers, viewing time-limited stories, liking/commenting on posts, chatting with followers, managing profiles, and receiving instant notifications for follows, likes, comments, and messages."
+      },
+      {
+        "subtitle": "3. Technology & Implementation",
+        "details": "Built with Flutter for the frontend and Node.js, Express, and MongoDB for the backend, the system integrates Cloudinary for media uploads, Firebase for real-time push notifications, JWT for secure authentication, and a scalable REST API architecture for smooth and responsive performance."
+      }
+    ],
+    "link": "https://github.com/thesoumisamanta"
+  },
+  {
+    "title": "Food-Product-Explorer-App",
+    "description": [
+      {
+        "subtitle": "1. Project Overview",
+        "details": "A React-based web application that allows users to search and explore food products using the OpenFoodFacts API. It helps users quickly access product details such as ingredients, nutritional values, and categories."
+      },
+      {
+        "subtitle": "2. Key Features",
+        "details": "Product search by name/barcode, category-based filtering, sorting options, detailed product view, and cart/wishlist functionality for saving selected items."
+      },
+      {
+        "subtitle": "3. Technology & Architecture",
+        "details": "Developed using React, Redux for state management, React Router for navigation, and Tailwind CSS for styling. API integration is done via OpenFoodFacts to fetch real-time product information."
+      }
+    ],
+    "link": "https://github.com/thesoumisamanta/Food-Product-Explorer-App.git"
+  }
 ]
