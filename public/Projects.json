@@ -33,7 +33,7 @@
         "details": "Built with Flutter for the frontend and Node.js, Express, and MongoDB for the backend, the system integrates Cloudinary for media uploads, Firebase for real-time push notifications, JWT for secure authentication, and a scalable REST API architecture for smooth and responsive performance."
       }
     ],
-    "link": "https://github.com/thesoumisamanta"
+    "link": "https://github.com/thesoumisamanta/frontend/releases/tag/v1.0.0"
   },
   {
     "title": "Food-Product-Explorer-App",
