@@ -1,56 +1,56 @@
 [
   {
-    "title": "Aviio Airport Operations Mobile App",
+    "title": "Aviio – Airport Operations Mobile App (AAHL)",
     "description": [
       {
-        "subtitle": "1.Platform Overview & Purpose",
-        "details": "Aviio is Adani Airports Holdings Ltd's digital operations platform that connects all airport stakeholders — airlines, ground handlers, security, retail, etc. — on a single system, enabling real-time data sharing, improved collaboration, and smoother airport operations."
+        "subtitle": "1. Project Overview & Role",
+        "details": "Live airline and airport operations mobile application for Adani Airports Holdings Ltd (AAHL). Contributed as a Flutter Frontend Developer at Aivista & Aiinhome Technologies Pvt. Ltd. (Dec 2024 – Jan 2026), collaborating in an Agile cross-functional team to deliver features in production."
       },
       {
-        "subtitle": "2. Passenger-Focused Features",
-        "details": "The platform provides passengers with live updates such as security wait times, gate changes, and baggage belt status, aiming to make travel more predictable and seamless."
+        "subtitle": "2. UI/UX & Core Contributions",
+        "details": "Designed and implemented user-friendly, responsive mobile interfaces aligned with industry-standard UX principles to support seamless operations and real-time stakeholder workflows."
       },
       {
-        "subtitle": "3. Technology & Implementation",
-        "details": "Developed using Flutter, BLoC architecture, and Firebase, Aviio delivers high-performance, scalable features with structured state management, real-time cloud integration, and push notifications to ensure timely updates and smooth operations."
+        "subtitle": "3. Technology & Integration",
+        "details": "Developed with Flutter and Dart, integrating RESTful APIs to ensure reliable, seamless data flow between frontend and backend services."
       }
     ],
     "link": "https://play.google.com/store/apps/details?id=com.adani.aahluc"
   },
   {
-    "title": "Travel Diary – Social Travel Experience Platform",
+    "title": "IKK Workspace – Enterprise Workforce Management App",
     "description": [
       {
-        "subtitle": "1. Platform Purpose & Core Experience",
-        "details": "Travel Diary is a social travel-sharing platform that allows users to document trips, share posts and stories, connect with other travelers, chat in real time, and build a personalized travel community through photos, videos, and meaningful interactions."
+        "subtitle": "1. Project Overview & Role",
+        "details": "Production-ready Enterprise Workforce Management application developed as a Flutter Developer at IntersoftKK Pvt. Ltd. (2026 – Present) to manage end-to-end organizational workflows."
       },
       {
-        "subtitle": "2. User-Centric Features",
-        "details": "The platform supports posting travel moments with images/videos, following other travelers, viewing time-limited stories, liking/commenting on posts, chatting with followers, managing profiles, and receiving instant notifications for follows, likes, comments, and messages."
-      },
-      {
-        "subtitle": "3. Technology & Implementation",
-        "details": "Built with Flutter for the frontend and Node.js, Express, and MongoDB for the backend, the system integrates Cloudinary for media uploads, Firebase for real-time push notifications, JWT for secure authentication, and a scalable REST API architecture for smooth and responsive performance."
-      }
-    ],
-    "link": "https://github.com/thesoumisamanta/frontend/releases/tag/v1.0.0"
-  },
-  {
-    "title": "Food-Product-Explorer-App",
-    "description": [
-      {
-        "subtitle": "1. Project Overview",
-        "details": "A React-based web application that allows users to search and explore food products using the OpenFoodFacts API. It helps users quickly access product details such as ingredients, nutritional values, and categories."
-      },
-      {
-        "subtitle": "2. Key Features",
-        "details": "Product search by name/barcode, category-based filtering, sorting options, detailed product view, and cart/wishlist functionality for saving selected items."
+        "subtitle": "2. Key Modules & Features",
+        "details": "Implements Attendance & Location Tracking, Timesheets, Leave Management, Expense Reimbursements, and Performance Tracking, complete with document scanning and digital signatures."
       },
       {
         "subtitle": "3. Technology & Architecture",
-        "details": "Developed using React, Redux for state management, React Router for navigation, and Tailwind CSS for styling. API integration is done via OpenFoodFacts to fetch real-time product information."
+        "details": "Built with Flutter using Clean Architecture, BLoC state management, and GetIt for dependency injection. Integrates REST APIs, Socket.IO, Firebase Cloud Messaging, SQLite offline caching, secure storage, and Firebase Crashlytics with separate dev and production configurations."
       }
     ],
-    "link": "https://github.com/thesoumisamanta/Food-Product-Explorer-App.git"
+    "link": "https://play.google.com/store/apps/details?id=com.intersoftkk.workspace"
+  },
+  {
+    "title": "Vagabond – Social Travel-Sharing App",
+    "description": [
+      {
+        "subtitle": "1. Platform Overview & Features",
+        "details": "Social travel-sharing mobile platform featuring posts, photos, videos, 24-hour stories, highlights, likes, comments, and configurable public/private profiles."
+      },
+      {
+        "subtitle": "2. Real-Time Messaging & Notifications",
+        "details": "Implements real-time one-to-one messaging with emoji reactions, typing indicators, online presence, and push notifications using Socket.IO and Firebase."
+      },
+      {
+        "subtitle": "3. Technology & Architecture",
+        "details": "Built using Flutter (Clean Architecture, BLoC) for the frontend and Node.js, Express, and MongoDB for the backend, integrating Cloudinary media uploads, JWT authentication with token rotation, and email OTP verification."
+      }
+    ],
+    "link": "https://play.google.com/store/apps/details?id=app.vagabond.com"
   }
 ]

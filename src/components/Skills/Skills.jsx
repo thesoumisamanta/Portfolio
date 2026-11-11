@@ -1,80 +1,90 @@
-const categories = [
+const skillCategories = [
     {
         id: 1,
         title: "Languages",
-        items: [
-            { logo: "/assets/images/dart.webp", name: "Dart", proficiency: 85 },
-            { logo: "/assets/images/javascript.png", name: "Javascript", proficiency: 80 },
-            { logo: "/assets/images/python.webp", name: "Python", proficiency: 70 },
+        skills: [
+            { name: "Dart", logo: "/assets/images/dart.webp" },
+            { name: "Kotlin" },
+            { name: "JavaScript", logo: "/assets/images/javascript.png" },
         ],
+        usage:
+            "I use Dart as my primary language to build cross-platform mobile applications with Flutter across IKK Workspace, Aviio, and Vagabond. I use Kotlin for native Android development alongside Jetpack Compose, and JavaScript to build backend REST APIs and real-time services with Node.js and Express."
     },
     {
         id: 2,
-        title: "Databases",
-        items: [
-            { logo: "/assets/images/mongodb.jpg", name: "MongoDB", proficiency: 80 },
-            { logo: "/assets/images/mysql.png", name: "MySQL", proficiency: 70 },
+        title: "Frameworks & UI Toolkits",
+        skills: [
+            { name: "Flutter", logo: "/assets/images/flutter.webp" },
+            { name: "Jetpack Compose" },
+            { name: "Express", logo: "/assets/images/express.png" },
         ],
+        usage:
+            "I use Flutter to build responsive, production-grade mobile interfaces for Aviio (AAHL Mobile App), IKK Workspace, and Vagabond. I work with Jetpack Compose for modern declarative Android UI, and Express to develop scalable RESTful backend endpoints, JWT authentication, and media APIs."
     },
     {
         id: 3,
-        title: "OS",
-        items: [
-            { logo: "/assets/images/windows.png", name: "Windows", proficiency: 80 },
-            { logo: "/assets/images/linux.png", name: "Linux", proficiency: 70 },
-            { logo: "/assets/images/android.webp", name: "Android", proficiency: 70 },
+        title: "State Management",
+        skills: [
+            { name: "BLoC", logo: "/assets/images/bloc.svg" },
+            { name: "GetX", logo: "/assets/images/getx.png" },
+            { name: "Provider" },
+            { name: "Riverpod" },
         ],
+        usage:
+            "I use BLoC extensively in enterprise and social apps like IKK Workspace and Vagabond to separate business logic from UI and manage complex async states cleanly. I also apply GetX, Provider, and Riverpod across mobile modules for reactive state updates, dependency handling, and predictable UI rendering."
     },
     {
         id: 4,
-        title: "State Mangaement Libraries",
-        items: [
-            { logo: "/assets/images/bloc.svg", name: "Bloc", proficiency: 92 },
-            { logo: "/assets/images/redux.png", name: "Redux", proficiency: 82 },
-            { logo: "/assets/images/getx.png", name: "GetX", proficiency: 85 },
+        title: "Databases",
+        skills: [
+            { name: "SQLite" },
+            { name: "MySQL", logo: "/assets/images/mysql.png" },
+            { name: "MongoDB", logo: "/assets/images/mongodb.jpg" },
         ],
+        usage:
+            "I use SQLite in IKK Workspace for reliable offline caching so workforce modules like attendance and timesheets stay functional without network connectivity. I use MongoDB to store profiles, posts, 24-hour stories, and real-time chat messages in Vagabond, and MySQL for structured relational data."
     },
     {
         id: 5,
-        title: "Platforms",
-        items: [
-            { logo: "/assets/images/github.jpg", name: "GitHub", proficiency: 90 },
-            { logo: "/assets/images/firebase.png", name: "Firebase", proficiency: 95 },
-            { logo: "/assets/images/appwrite.jpg", name: "Appwrite", proficiency: 85 },
+        title: "APIs & Cloud",
+        skills: [
+            { name: "RESTful APIs" },
+            { name: "Firebase", logo: "/assets/images/firebase.png" },
         ],
+        usage:
+            "I integrate RESTful APIs across Aviio, IKK Workspace, and Vagabond to power smooth, real-time data flow between Flutter frontends and backend services. I use Firebase—including Firebase Cloud Messaging and Crashlytics—for instant push notifications and production crash monitoring."
     },
     {
         id: 6,
-        title: "Technologies",
-        items: [
-            { logo: "/assets/images/html.png", name: "HTML5", proficiency: 95 },
-            { logo: "/assets/images/css.jpg", name: "CSS3", proficiency: 80 },
-            { logo: "/assets/images/bootstrap.jpg", name: "Bootstrap", proficiency: 80 },
-            { logo: "/assets/images/tailwindcss.png", name: "Tailwind CSS", proficiency: 80 },
+        title: "Architecture",
+        skills: [
+            { name: "Clean Architecture" },
+            { name: "Modular Architecture" },
         ],
+        usage:
+            "I apply Clean Architecture and Modular Architecture in production apps such as IKK Workspace and Vagabond to maintain strict separation across data, domain, and presentation layers. Combined with GetIt dependency injection and dev/prod configurations, this keeps large codebases scalable and testable."
     },
     {
         id: 7,
-        title: "Tools",
-        items: [
-            { logo: "/assets/images/vscode.jpg", name: "Visual Studio Code", proficiency: 95 },
-            { logo: "/assets/images/antigravity.webp", name: "Antigravity", proficiency: 75 },
-            { logo: "/assets/images/replit.png", name: "Replit", proficiency: 80 },
-            { logo: "/assets/images/sublime.jpg", name: "Sublime Text", proficiency: 75 },
+        title: "Version Control",
+        skills: [
+            { name: "Git", logo: "/assets/images/git.png" },
+            { name: "GitHub", logo: "/assets/images/github.jpg" },
         ],
+        usage:
+            "I use Git and GitHub daily for branching, code reviews, and release management across Agile workflows at IntersoftKK and Aiinhome Technologies. They streamline collaboration with cross-functional teams and ensure clean, traceable production deployments."
     },
-
     {
         id: 8,
-        title: "Library & Frameworks",
-        items: [
-            { logo: "/assets/images/express.png", name: "Express Js", proficiency: 88 },
-            { logo: "/assets/images/reactjs.png", name: "React Js", proficiency: 92 },
-            { logo: "/assets/images/flask.png", name: "Flask", proficiency: 82 },
-            { logo: "/assets/images/angular.png", name: "Angular Js", proficiency: 78 },
+        title: "Operating Systems",
+        skills: [
+            { name: "Windows", logo: "/assets/images/windows.png" },
+            { name: "Linux", logo: "/assets/images/linux.png" },
+            { name: "Mac" },
         ],
+        usage:
+            "I develop, test, and ship Flutter and Android applications across Windows, Linux, and macOS environments. Working across all three operating systems lets me manage cross-platform builds, device emulators, and environment-specific configurations smoothly."
     },
-
 ];
 
 export default function Skills() {
@@ -89,82 +99,61 @@ export default function Skills() {
                     </span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-                    A comprehensive toolkit for building modern web applications
+                    Core mobile development technologies and architectures I use in production applications
                 </p>
             </div>
 
             {/* Skills Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                {categories.map(({ id, title, items }, categoryIndex) => (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+                {skillCategories.map(({ id, title, skills, usage }, categoryIndex) => (
                     <div
                         key={id}
-                        className={`glass-card rounded-2xl p-6 hover-lift hover:shadow-glow-lg transition-all duration-500 animate-scaleIn delay-${categoryIndex * 100}`}
+                        className="group glass-card rounded-2xl p-6 md:p-8 hover-lift hover:shadow-glow-lg transition-all duration-500 relative overflow-hidden animate-scaleIn"
                         style={{ animationDelay: `${categoryIndex * 100}ms` }}
                     >
-                        {/* Category Title */}
-                        <div className="mb-6">
-                            <h2 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-                                {title}
-                            </h2>
-                            <div className="h-1 w-16 bg-gradient-primary rounded-full mt-2"></div>
-                        </div>
+                        {/* Hover Glow Background */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-accent-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
-                        {/* Skills Items */}
-                        <div className="space-y-4">
-                            {items.map(({ logo, name, proficiency }, index) => (
-                                <div
-                                    key={index}
-                                    className="group relative glass-card rounded-xl p-4 hover:bg-white/10 transition-all duration-300 hover-lift"
-                                >
-                                    {/* Hover Glow Effect */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                        <div className="relative z-10 flex flex-col h-full gap-5">
+                            {/* Category Title */}
+                            <div>
+                                <h2 className="text-2xl font-bold bg-gradient-to-r from-primary-300 to-accent-300 bg-clip-text text-transparent">
+                                    {title}
+                                </h2>
+                                <div className="h-1 w-16 bg-gradient-primary rounded-full mt-2"></div>
+                            </div>
 
-                                    {/* Content */}
-                                    <div className="relative flex items-center gap-4">
-                                        {/* Icon */}
-                                        <div className="relative flex-shrink-0">
-                                            {/* Icon Glow */}
-                                            <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-accent-400 rounded-full blur-md opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-
+                            {/* Skill Chips */}
+                            <div className="flex flex-wrap gap-3">
+                                {skills.map(({ name, logo }, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-primary-400/40 transition-all duration-300"
+                                    >
+                                        {logo ? (
                                             <img
                                                 src={logo}
-                                                className="relative w-12 h-12 rounded-full border-2 border-white/20 object-cover group-hover:scale-110 transition-transform duration-300"
                                                 alt={name}
+                                                className="w-6 h-6 rounded-full object-cover border border-white/20"
                                             />
-                                        </div>
-
-                                        {/* Name and Progress Bar */}
-                                        <div className="flex-1 min-w-0">
-                                            <div className="flex items-center justify-between mb-2">
-                                                <div className="font-semibold text-sm text-white group-hover:text-primary-300 transition-colors duration-300">
-                                                    {name}
-                                                </div>
-                                                <span className="text-xs text-primary-400 font-bold">{proficiency}%</span>
-                                            </div>
-
-                                            {/* Progress Bar */}
-                                            <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                                                <div
-                                                    className="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full transition-all duration-1000 ease-out"
-                                                    style={{ width: `${proficiency}%` }}
-                                                ></div>
-                                            </div>
-                                        </div>
+                                        ) : (
+                                            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-primary-400 to-accent-400"></span>
+                                        )}
+                                        <span className="text-sm font-medium text-gray-100">{name}</span>
                                     </div>
+                                ))}
+                            </div>
 
-                                    {/* Animated Border on Hover */}
-                                    <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                        style={{
-                                            background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                                            padding: '1px',
-                                            WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-                                            WebkitMaskComposite: 'xor',
-                                            maskComposite: 'exclude'
-                                        }}>
-                                    </div>
-                                </div>
-                            ))}
+                            {/* How & Where Used */}
+                            <div className="bg-white/5 rounded-xl p-4 border border-white/5 mt-auto">
+                                <p className="text-sm text-gray-300 leading-relaxed">
+                                    {usage}
+                                </p>
+                            </div>
                         </div>
+
+                        {/* Decorative Corner Element */}
+                        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                     </div>
                 ))}
             </div>

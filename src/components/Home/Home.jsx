@@ -22,15 +22,13 @@ export default function Home() {
 
                             {/* Typing Animation */}
                             <p className="text-2xl md:text-3xl animate-fadeInLeft delay-200">
-                                I'm a{" "}
+                                I&apos;m a{" "}
                                 <ReactTyped
                                     className="font-bold bg-gradient-to-r from-primary-400 to-accent-500 bg-clip-text text-transparent"
                                     strings={[
                                         "Flutter Developer",
-                                        "Frontend Developer",
                                         "Android Developer",
-                                        "Web Developer",
-                                        "Software Developer"
+                                        "Mobile Application Developer"
                                     ]}
                                     typeSpeed={40}
                                     backSpeed={50}
@@ -40,22 +38,20 @@ export default function Home() {
                         </div>
 
                         <p className="text-base md:text-2xl text-gray-300 leading-relaxed text-justify animate-fadeInLeft delay-400">
-                            I'm <span className="font-bold">Soumi Samanta</span>, a passionate <span className="font-extrabold bg-gradient-to-r from-primary-400 bg-clip-text text-transparent"><span className="text-pink-400">Frontend & Flutter Developer</span></span> specializing in building responsive, user-friendly, and high-performance applications. I'm currently working at <span className="font-bold text-white">Aiinhome Technologies Pvt. Ltd.</span>, where I contribute to a live airline-based project with a strong focus on <span className="font-bold text-primary-400">Flutter UI development</span>, REST API integration, and seamless user experience design. I have hands-on experience in building real-world applications such as the <span className="font-bold text-accent-400">Aviio Airport Operations App</span> and the <span className="font-bold text-accent-400">Food Product Explorer App</span>, showcasing my ability to solve problems, design intuitive interfaces, and deliver production-ready features. My tech stack includes <span className="font-bold text-primary-300">Flutter, React.js, Redux, Tailwind CSS, Node.js, Express.js, MySQL, MongoDB</span>, and more, supported by strong communication and collaboration skills.
+                            I&apos;m <span className="font-bold">Soumi Samanta</span>, a passionate <span className="font-extrabold bg-gradient-to-r from-primary-400 bg-clip-text text-transparent"><span className="text-pink-400">Mobile Application &amp; Flutter Developer</span></span> with almost 2 years of experience building responsive, scalable, and user-friendly mobile applications using <span className="font-bold text-primary-300">Flutter, Dart, REST APIs, Firebase</span>, and state management solutions (<span className="font-bold text-primary-400">BLoC, GetX, Provider, Riverpod</span>). Currently working as a Flutter Developer at <span className="font-bold text-white">IntersoftKK Pvt. Ltd.</span>, I am developing the production-ready <span className="font-bold text-accent-400">IKK Workspace</span> Enterprise Workforce Management Application using Clean Architecture, BLoC, and real-time integrations. Previously, as an Associate Developer at <span className="font-bold text-white">Aivista &amp; Aiinhome Technologies Pvt. Ltd.</span>, I contributed to the live <span className="font-bold text-accent-400">Aviio (AAHL Mobile App)</span> through Flutter UI development and REST API integration, and I also built <span className="font-bold text-accent-400">Vagabond</span>, a social travel-sharing mobile app powered by Flutter, Node.js, Express, and MongoDB.
                         </p>
 
-                        {/* CTA Buttons */}
+                        {/* CTA Button */}
                         <div className="flex gap-4 animate-fadeInLeft delay-500">
                             <a
-                                href="/contact"
-                                className="btn-primary hover-lift"
+                                href="/assets/cv/Soumi_Samanta.pdf"
+                                className="inline-flex items-center gap-3 btn-primary hover-lift group"
+                                download
                             >
-                                Get in Touch
-                            </a>
-                            <a
-                                href="/projects"
-                                className="px-6 py-3 rounded-lg font-semibold border-2 border-primary-500 text-primary-400 hover:bg-primary-500 hover:text-white transition-all duration-300 hover-lift"
-                            >
-                                View Projects
+                                <svg className="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                Download CV
                             </a>
                         </div>
                     </div>

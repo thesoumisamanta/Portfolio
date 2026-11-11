@@ -29,14 +29,14 @@ export default function Projects() {
                     </span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-                    Explore my portfolio of innovative web applications and solutions
+                    Explore my portfolio of production mobile applications and full-stack solutions
                 </p>
             </div>
 
-            {/* Projects Grid */}
-            <div className="flex flex-wrap justify-center">
+            {/* Projects List (Horizontal Row-Wise Boxes) */}
+            <div className="flex flex-col gap-6 max-w-6xl mx-auto">
                 {projects.map((project, index) => (
-                    <div key={index} className="animate-scaleIn" style={{ animationDelay: `${index * 100}ms` }}>
+                    <div key={index} className="animate-scaleIn w-full" style={{ animationDelay: `${index * 100}ms` }}>
                         <ProjectCard
                             title={project.title}
                             description={project.description}
